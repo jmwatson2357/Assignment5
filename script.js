@@ -47,7 +47,7 @@ form.addEventListener("submit", function(event){
     let cPStatus = document.getElementById("copilotStatus");
     let fStatus = document.getElementById("fuelStatus");
     let cStatus = document.getElementById("cargoStatus");
-    if(pilot === undefined || cPilot === undefined || fLevel === undefined || cMass === undefined){
+    if(pilot.value === undefined || cPilot.value === undefined || fLevel.value === undefined || cMass.value === undefined){
         alert("All field are required!");
     } else {
         if(isNaN(fLevel.value) || isNaN(cMass.value)){
